@@ -1,0 +1,25 @@
+/*!
+ * ReactNg is an open-source JavaScript library that allows you to add
+ * some handy AngularJS-like utilities to your React components.
+ *
+ * ReactNg 0.0.0
+ * https://github.com/CodementorIO/react-ng/
+ * License: MIT
+ */
+
+;(function (root, factory) {
+  "use strict";
+  if (typeof define === "function" && define.amd) {
+    // AMD
+    define([], function() {
+      return (root.ReactNgMixin = factory());
+    });
+  } else if (typeof exports === "object") {
+    // CommonJS
+    module.exports = factory();
+  } else {
+    // Global variables
+    root.ReactNgMixin = factory();
+  }
+}(this, function() {
+  "use strict";

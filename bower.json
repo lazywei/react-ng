@@ -1,0 +1,39 @@
+{
+  "name": "react-ng",
+  "description": "Bring the bright side of AngularJS into ReactJS",
+  "version": "0.0.0",
+  "authors": [
+    "Codementor <support@codementor.io>"
+  ],
+  "homepage": "https://github.com/CodementorIO/react-ng",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodementorIO/react-ng.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "mixin",
+    "codementor",
+    "angularjs"
+  ],
+  "main": "dist/react-ng.js",
+  "ignore": [
+    "**/.*",
+    "src",
+    "build",
+    "tests",
+    "examples",
+    "node_modules",
+    "bower_components",
+    "package.json",
+    "gulpfile.js",
+    "changelog.txt"
+  ],
+  "dependencies": {
+    "react": "0.12.x",
+  },
+  "devDependencies": {
+    "jasmine": "~2.0.0"
+  }
+}
