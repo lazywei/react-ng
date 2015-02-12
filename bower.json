@@ -1,14 +1,14 @@
 {
   "name": "react-ng",
   "description": "Bring the bright side of AngularJS into ReactJS",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "Codementor <support@codementor.io>"
   ],
-  "homepage": "https://github.com/CodementorIO/react-ng",
+  "homepage": "https://github.com/lazywei/react-ng",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CodementorIO/react-ng.git"
+    "url": "https://github.com/lazywei/react-ng.git"
   },
   "license": "MIT",
   "keywords": [
