@@ -1,19 +1,27 @@
 var ReactNgMixin = {
-  /********************/
-  /*     react-if     */
-  /********************/
+  /***************/
+  /*    rcIf    */
+  /***************/
 
   componentWillMount: function() {
-    this.renderComponent = this.render;
+    this.origRenderer = this.render;
+    if (this.props.rcIf === undefined) {
+      this.props.rcIf = true;
+    }
+    this.reactIfComponent(this.props.rcIf);
   },
 
-  componentWillUpdate: function() {
-    if (this.props.if != undefined && !this.props.if) {
+  componentWillReceiveProps: function(nextProps) {
+    this.reactIfComponent(nextProps.rcIf);
+  },
+
+  reactIfComponent: function(willShow) {
+    if (willShow !== undefined && !willShow) {
       this.render = function() {
         return null;
-      }
+      };
     } else {
-      this.render = this.renderComponent;
+      this.render = this.origRenderer;
     }
   }
 };
