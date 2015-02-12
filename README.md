@@ -36,3 +36,9 @@ React.render(
   element
 )
 ```
+
+## Authors
+
+- Chien-Lin (Gage) Tseng [@gage](https://github.com/gage)
+- Chih-Wei (Bert) Chang [@lazywei](https://github.com/lazywei)
+- [CodementorIO](https://codementor.io)
